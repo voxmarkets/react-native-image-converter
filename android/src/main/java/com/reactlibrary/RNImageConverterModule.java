@@ -23,15 +23,33 @@ public class RNImageConverterModule extends ReactContextBaseJavaModule {
   public String getName() {
     return "RNImageConverter";
   }
-    
+
   @ReactMethod
-  public void convertToPNG(String original, Callback newFile) {
-    //
+  public void convertToPNG(String original, Callback success) {
+    String imageFileName = "image-converted-" + UUID.randomUUID().toString();
+    File path = Environment.getExternalStoragePublicDirectory(
+            Environment.DIRECTORY_PICTURES);
+    if (!path.exists() && !path.isDirectory()) {
+        path.mkdirs();
+    }
+    File image = File.createTempFile(imageFileName, ".png", path);
+    BufferedImage bufferedImage = ImageIO.read(new File(original));
+    ImageIO.write(bufferedImage, "png", image);
+    success.invoke(imageFileName);
   }
 
   @ReactMethod
-  public void convertToJPEG(String original,  Callback newFile) {
-    //
+  public void convertToJPEG(String original,  Callback success) {
+    String imageFileName = "image-converted-" + UUID.randomUUID().toString();
+    File path = Environment.getExternalStoragePublicDirectory(
+            Environment.DIRECTORY_PICTURES);
+    if (!path.exists() && !path.isDirectory()) {
+        path.mkdirs();
+    }
+    File image = File.createTempFile(imageFileName, ".jpeg", path);
+    BufferedImage bufferedImage = ImageIO.read(new File(original));
+    ImageIO.write(bufferedImage, "jpg", image);
+    success.invoke(imageFileName);
   }
     
 }

@@ -47,10 +47,8 @@ RNImageConverter.convertToPNG(myFile, (convertedFilepath) => {
 
 ### Convert to JPEG
 ```javascript
-RNImageConverter.convertToJPEG(myFile, 0.5,(convertedFilepath) => {
+RNImageConverter.convertToJPEG(myFile, (convertedFilepath) => {
   console.log(convertedFilepath);
 });
 ```
-
-You can specify the compression quality, 1.0 being maximum quality and 0.0 being maximum compression.
   

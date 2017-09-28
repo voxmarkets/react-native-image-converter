@@ -2,7 +2,7 @@
 {
   "name": "react-native-image-converter",
   "version": "1.0.0",
-  "description": "A simple way to convert image files in React Native",
+  "description": "Convert image files in React Native",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

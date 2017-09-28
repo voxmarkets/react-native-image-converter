@@ -17,10 +17,9 @@ RCT_EXPORT_METHOD(convertToPNG:(NSString *)original
 }
 
 RCT_EXPORT_METHOD(convertToJPEG:(NSString *)original
-                   compression:(double)compression
                    callback:(RCTResponseSenderBlock)callback)
 {
-    NSData *imageData = UIImageJPEGRepresentation([UIImage imageWithContentsOfFile:original], compression);
+    NSData *imageData = UIImageJPEGRepresentation([UIImage imageWithContentsOfFile:original], 1.0);
     NSURL *tmpDirURL = [NSURL fileURLWithPath:NSTemporaryDirectory() isDirectory:YES];
     NSURL *fileURL = [[tmpDirURL URLByAppendingPathComponent:[[NSProcessInfo processInfo] globallyUniqueString]] URLByAppendingPathExtension:@"jpeg"];
     NSString *path = [fileURL path];
