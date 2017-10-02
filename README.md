@@ -1,6 +1,8 @@
 
 # react-native-image-converter
 
+This package allows you to convert image files into different forms and into their Base64 encoding, especially helpful for uploading image files saved via the camera. 
+
 ## Getting Started
 
 `$ npm install react-native-image-converter --save`
@@ -38,17 +40,19 @@
 import RNImageConverter from 'react-native-image-converter';
 ```
 
-### Convert to PNG
+### Get Image as PNG
 ```javascript
-RNImageConverter.convertToPNG(myFile, (convertedFilepath) => {
-  console.log(convertedFilepath);
+RNImageConverter.getPNG(myFile, (newFile) => {
+  console.log(newFile);
+  //4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsND...
 });
 ```
 
-### Convert to JPEG
+### Get Image as JPEG
 ```javascript
-RNImageConverter.convertToJPEG(myFile, (convertedFilepath) => {
-  console.log(convertedFilepath);
+RNImageConverter.getJPEG(myFile, (newFile) => {
+  console.log(newFile);
+  //4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsND...
 });
 ```
   

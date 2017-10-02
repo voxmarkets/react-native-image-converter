@@ -11,7 +11,8 @@
     "react-native",
     "convert",
     "conversion",
-    "compression",
+    "base64",
+    "uploading",
     "image"
   ],
   "author": "Vox Markets",
