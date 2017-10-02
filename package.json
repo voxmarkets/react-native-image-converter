@@ -1,8 +1,8 @@
 
 {
   "name": "react-native-image-converter",
-  "version": "1.0.0",
-  "description": "Convert image files in React Native",
+  "version": "1.1.0",
+  "description": "Convert Image Files and return them as Base64 Encoded Strings",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
