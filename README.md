@@ -5,7 +5,7 @@ This package allows you to convert image files into different forms and into the
 
 ## Getting Started
 
-`$ npm install react-native-image-converter --save`
+`$ npm install --save git+https://git@github.com/voxmarkets/react-native-image-converter`
 
 ### Mostly Automatic Installation
 
@@ -20,7 +20,7 @@ This package allows you to convert image files into different forms and into the
 3. In Xcode, in the project navigator, select your project. Add `libRNImageConverter.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
 4. Run your project (`Cmd+R`)
 
-#### Android
+#### Android (coming soon!)
 
 1. Open up `android/app/src/main/java/[...]/MainActivity.java`
   - Add `import com.reactlibrary.RNImageConverterPackage;` to the imports at the top of the file
