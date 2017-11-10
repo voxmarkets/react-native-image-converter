@@ -1,7 +1,7 @@
 
 # react-native-image-converter
 
-This package allows you to convert image files into different forms and into their Base64 encoding, especially helpful for uploading image files saved via the camera. 
+Convert image files into different formats, as well as into their Base64 encoding, especially helpful for uploading image files saved via the camera.
 
 ## Getting Started
 
